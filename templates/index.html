@@ -6,6 +6,10 @@
     <title>Data Visualization</title>
 </head>
 <body>
+    <nav id="navbar">
+        <div id="home"><a href="/home">Home</a></div>
+        <div id="upload"><a href="/about">About</a></div>
+    </nav>
     <h1>Data Visualization</h1>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="file" accept=".csv">
@@ -13,3 +17,17 @@
     </form>
 </body>
 </html>
+
+<style>
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #b5dada;
+    padding: 0em;
+    margin: 0em;
+}
+#home {
+    padding-inline-end: 3em;
+}
+</style>
